@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços | AZcom</title>
+  <meta name="description" content="Conheça as soluções completas em tecnologia e comunicação que oferecemos para empresas de todos os portes." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AZcom | Tecnologia que transforma negócios" />
+  <meta property="og:description" content="Soluções inovadoras em telefonia IP, internet empresarial e infraestrutura de TI." />
+  <meta property="og:image" content="https://www.azcom.com.br/img/hero-bg.webp" />
+  <meta property="og:url" content="https://www.azcom.com.br/" />
+
+  <!-- Google Analytics 4 (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Code (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <div class="header__logo-mark">AZ</div>
+        <span class="header__logo-text">azcom</span>
+      </a>
+      
+      <nav class="header__nav desktop-only">
+        <a href="/" class="header__link">Home</a>
+        <a href="/servicos.html" class="header__link header__link--active">Serviços</a>
+        <a href="/solucoes.html" class="header__link">Soluções</a>
+        <a href="/sobre.html" class="header__link">Sobre</a>
+      </nav>
+
+      
+      <div class="header__actions flex items-center gap-sm">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Modo Escuro / Claro">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <div class="header__cta desktop-only">
+
+        <a href="/contato.html" class="btn btn-primary btn--sm">Fale Conosco</a>
+      </div>
+      </div>
+
+      <button id="burger" class="header__burger mobile-only" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <aside id="drawer" class="drawer">
+    <div class="drawer__header">
+      <div class="header__logo-text">azcom</div>
+      <button id="drawer-close" class="drawer__close" aria-label="Fechar menu">×</button>
+    </div>
+    <a href="/" class="drawer__link">Home</a>
+    <a href="/servicos.html" class="drawer__link drawer__link--active">Serviços</a>
+    <a href="/solucoes.html" class="drawer__link">Soluções</a>
+    <a href="/sobre.html" class="drawer__link">Sobre</a>
+    <a href="/contato.html" class="drawer__link" style="margin-top: 1rem; background: var(--navy); color: white; text-align: center;">Fale Conosco</a>
+  </aside>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__inner" data-reveal>
+        <div class="page-hero__content">
+          <span class="eyebrow eyebrow--light">CATÁLOGO DE SERVIÇOS</span>
+          <h1 class="text-hero">Nossos Serviços</h1>
+          <p>Conheça as soluções completas em tecnologia e comunicação que oferecemos para empresas de todos os portes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Service -->
+    <section class="section section--flush">
+      <div class="container">
+        <div class="card hover-lift" data-reveal style="background: var(--grad-card); color: white; padding: var(--space-2xl) var(--space-xl);">
+          <div class="grid grid-2 items-center gap-xl">
+            <div>
+              <span class="badge badge--new" style="margin-bottom: 1rem;">NOVO</span>
+              <h2 style="color: white; margin-bottom: 1rem;">Assistente Virtual com Inteligência Artificial</h2>
+              <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: var(--fs-body);">
+                Modernize o atendimento da sua empresa com nosso assistente virtual baseado em IA. Utilizando a tecnologia Google Dialogflow, oferecemos uma solução de chatbot que entende linguagem natural e proporciona uma experiência de atendimento humanizada.
+              </p>
+              <ul style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li class="flex items-center gap-sm">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--sky)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Atendimento automatizado 24/7
+                </li>
+                <li class="flex items-center gap-sm">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--sky)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Integração com seus sistemas (CRM, ERP)
+                </li>
+                <li class="flex items-center gap-sm">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--sky)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Qualificação inteligente de leads
+                </li>
+              </ul>
+              <div class="flex gap-sm">
+                <a href="/contato.html" class="btn btn-white">Experimente Agora <span class="arrow">→</span></a>
+              </div>
+            </div>
+            
+            <div class="desktop-only" style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid rgba(255,255,255,0.2);">
+              <!-- Chat Mockup -->
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="align-self: flex-start; background: rgba(255,255,255,0.9); color: var(--navy); padding: 1rem; border-radius: 16px 16px 16px 0; max-width: 85%;">
+                  <p style="margin: 0; font-size: 0.9rem;">Olá! Sou o assistente virtual da AZcom. Como posso ajudar você hoje?</p>
+                </div>
+                <div style="align-self: flex-end; background: var(--blue); color: white; padding: 1rem; border-radius: 16px 16px 0 16px; max-width: 85%;">
+                  <p style="margin: 0; font-size: 0.9rem;">Preciso de informações sobre o Telefonia IP empresarial.</p>
+                </div>
+                <div style="align-self: flex-start; background: rgba(255,255,255,0.9); color: var(--navy); padding: 1rem; border-radius: 16px 16px 16px 0; max-width: 85%;">
+                  <p style="margin: 0; font-size: 0.9rem;">Claro! A AZcom tem várias soluções de comunicação. Gostaria de agendar uma consultoria gratuita?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Services Grid -->
+    <section class="section section--flush">
+      <div class="container">
+        <div class="grid grid-3" data-reveal-stagger>
+          
+          <div class="card hover-lift flex-col">
+            <h3 class="text-h4" style="margin-bottom: 0.5rem;">Telefonia IP</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem; flex-grow: 1;">Sistema de comunicação por voz que utiliza a internet. Soluções completas de PABX virtual, ramais IP e integração com sistemas legados.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem;">
+              <span class="badge badge--outline">PABX Virtual</span>
+              <span class="badge badge--outline">URA Inteligente</span>
+              <span class="badge badge--outline">Gravação</span>
+            </div>
+            <a href="/contato.html" class="link">Consultar valores <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift flex-col">
+            <h3 class="text-h4" style="margin-bottom: 0.5rem;">Internet Empresarial</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem; flex-grow: 1;">Conexões de alta velocidade e estabilidade com garantia de banda, suporte prioritário e SLA de alta disponibilidade.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem;">
+              <span class="badge badge--outline">Fibra Óptica</span>
+              <span class="badge badge--outline">Redundância</span>
+              <span class="badge badge--outline">SLA</span>
+            </div>
+            <a href="/contato.html" class="link">Consultar valores <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift flex-col">
+            <h3 class="text-h4" style="margin-bottom: 0.5rem;">Segurança Digital</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem; flex-grow: 1;">Proteja seus dados, redes e sistemas contra ameaças virtuais, incluindo firewall, antivírus corporativo e VPN segura.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem;">
+              <span class="badge badge--outline">Firewall UTM</span>
+              <span class="badge badge--outline">Antivírus</span>
+              <span class="badge badge--outline">Backup Nuvem</span>
+            </div>
+            <a href="/contato.html" class="link">Consultar valores <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift flex-col">
+            <h3 class="text-h4" style="margin-bottom: 0.5rem;">Infraestrutura de TI</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem; flex-grow: 1;">Projetos e implementação de infraestrutura tecnológica, incluindo redes, servidores físicos/virtuais e cabeamento estruturado.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem;">
+              <span class="badge badge--outline">Servidores</span>
+              <span class="badge badge--outline">Redes</span>
+              <span class="badge badge--outline">Virtualização</span>
+            </div>
+            <a href="/contato.html" class="link">Consultar valores <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift flex-col">
+            <h3 class="text-h4" style="margin-bottom: 0.5rem;">Controle de Acesso</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem; flex-grow: 1;">Sistemas inteligentes para gerenciamento de acesso e controle de ponto, integrados com sua infraestrutura para maior segurança.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem;">
+              <span class="badge badge--outline">Biometria</span>
+              <span class="badge badge--outline">Catracas</span>
+              <span class="badge badge--outline">Câmeras</span>
+            </div>
+            <a href="/contato.html" class="link">Consultar valores <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift flex-col">
+            <h3 class="text-h4" style="margin-bottom: 0.5rem;">Cloud Computing</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem; flex-grow: 1;">Soluções em nuvem para armazenamento e gestão de dados, com segurança, escalabilidade e redução de custos operacionais.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem;">
+              <span class="badge badge--outline">AWS/Azure</span>
+              <span class="badge badge--outline">Migração</span>
+              <span class="badge badge--outline">Storage</span>
+            </div>
+            <a href="/contato.html" class="link">Consultar valores <span class="arrow">→</span></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section" style="padding-bottom: var(--space-4xl);">
+      <div class="bottom-cta" data-reveal>
+        <h3>Precisa de uma solução personalizada?</h3>
+        <p>Entre em contato conosco para uma consultoria gratuita. Nossa equipe de especialistas irá analisar as necessidades da sua empresa e sugerir as melhores soluções.</p>
+        <a href="/contato.html" class="btn btn-primary">Fale com um Especialista <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="flex items-center gap-sm">
+            <div class="header__logo-mark" style="background: var(--sky); color: var(--navy);">AZ</div>
+            <span class="header__logo-text" style="color: white;">azcom</span>
+          </div>
+          <p>Soluções inovadoras em tecnologia e comunicação para impulsionar o seu negócio.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">SOLUÇÕES</h4>
+          <div class="footer__links">
+            <a href="/servicos.html" class="footer__link">Telefonia IP</a>
+            <a href="/servicos.html" class="footer__link">Internet Empresarial</a>
+            <a href="/servicos.html" class="footer__link">Segurança Digital</a>
+            <a href="/servicos.html" class="footer__link">Infraestrutura de TI</a>
+            <a href="/solucoes.html" class="footer__link">Cloud Computing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">LINKS ÚTEIS</h4>
+          <div class="footer__links">
+            <a href="/sobre.html" class="footer__link">Sobre Nós</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="/contato.html" class="footer__link">Contato</a>
+            <a href="#" class="footer__link">Termos de Uso</a>
+            <a href="#" class="footer__link">Política de Privacidade</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">CONTATO</h4>
+          <div class="footer__contact-info">
+            <span>Rua Cássia 1149, Jardim Francano</span>
+            <span>Franca/SP, 14405016</span>
+            <span style="margin-top: 0.5rem; font-weight: 600; color: white;">+55 (16) 98225-0770</span>
+            <span>contato@grupoazc.com.br</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 AZCOM. TODOS OS DIREITOS RESERVADOS.</span>
+        <span>FRANCA · SP · BR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZcom | Tecnologia que transforma negócios</title>
+  <meta name="description" content="Soluções inovadoras em telefonia IP, internet empresarial e infraestrutura de TI para impulsionar o seu negócio." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AZcom | Tecnologia que transforma negócios" />
+  <meta property="og:description" content="Soluções inovadoras em telefonia IP, internet empresarial e infraestrutura de TI." />
+  <meta property="og:image" content="https://www.azcom.com.br/img/hero-bg.webp" />
+  <meta property="og:url" content="https://www.azcom.com.br/" />
+
+  <!-- Google Analytics 4 (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Code (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <div class="header__logo-mark">AZ</div>
+        <span class="header__logo-text">azcom</span>
+      </a>
+      
+      <nav class="header__nav desktop-only">
+        <a href="/" class="header__link header__link--active">Home</a>
+        <a href="/servicos.html" class="header__link">Serviços</a>
+        <a href="/solucoes.html" class="header__link">Soluções</a>
+        <a href="/sobre.html" class="header__link">Sobre</a>
+      </nav>
+
+      
+      <div class="header__actions flex items-center gap-sm">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Modo Escuro / Claro">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <div class="header__cta desktop-only">
+
+        <a href="/contato.html" class="btn btn-primary btn--sm">Fale Conosco</a>
+      </div>
+      </div>
+
+      <button id="burger" class="header__burger mobile-only" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <aside id="drawer" class="drawer">
+    <div class="drawer__header">
+      <div class="header__logo-text">azcom</div>
+      <button id="drawer-close" class="drawer__close" aria-label="Fechar menu">×</button>
+    </div>
+    <a href="/" class="drawer__link drawer__link--active">Home</a>
+    <a href="/servicos.html" class="drawer__link">Serviços</a>
+    <a href="/solucoes.html" class="drawer__link">Soluções</a>
+    <a href="/sobre.html" class="drawer__link">Sobre</a>
+    <a href="/contato.html" class="drawer__link" style="margin-top: 1rem; background: var(--navy); color: white; text-align: center;">Fale Conosco</a>
+  </aside>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__content" data-reveal>
+          <div class="hero__text">
+            <span class="eyebrow eyebrow--light">Tecnologia que transforma negócios</span>
+            <h1 class="hero__title">Soluções de comunicação que <br/><em>impulsionam</em> seu negócio.</h1>
+          </div>
+          <div class="hero__actions">
+            <a href="#servicos" class="btn btn-white">Nossas Soluções <span class="arrow">→</span></a>
+            <a href="/contato.html" class="btn btn-ghost">Fale Conosco</a>
+          </div>
+        </div>
+        <div class="hero__photo desktop-only" data-reveal="scale">
+          <img src="/img/hero-bg.webp" alt="Equipe AZcom em ambiente de tecnologia" />
+          <div class="hero__photo-overlay">
+            <div class="hero__photo-eyebrow">EQUIPE AZCOM · FRANCA/SP</div>
+            <div class="hero__photo-title">22 anos servindo empresas brasileiras.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee Partners -->
+    <section class="section section--flush" data-reveal>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="marquee__item">CISCO</span>
+          <span class="marquee__item">MICROSOFT</span>
+          <span class="marquee__item">AWS</span>
+          <span class="marquee__item">FORTINET</span>
+          <span class="marquee__item">GOOGLE CLOUD</span>
+          <span class="marquee__item">VMWARE</span>
+          <span class="marquee__item">DELL</span>
+          <span class="marquee__item">INTELBRAS</span>
+          <!-- Duplicate for infinite scroll -->
+          <span class="marquee__item">CISCO</span>
+          <span class="marquee__item">MICROSOFT</span>
+          <span class="marquee__item">AWS</span>
+          <span class="marquee__item">FORTINET</span>
+          <span class="marquee__item">GOOGLE CLOUD</span>
+          <span class="marquee__item">VMWARE</span>
+          <span class="marquee__item">DELL</span>
+          <span class="marquee__item">INTELBRAS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">O QUE OFERECEMOS</span>
+          <h2>Serviços de Excelência</h2>
+          <p>Oferecemos soluções completas em tecnologia e comunicação para aumentar a produtividade e reduzir custos do seu negócio.</p>
+        </div>
+
+        <div class="services-grid" data-reveal-stagger>
+          <!-- Featured Service -->
+          <div class="card service-card service-card--featured hover-lift">
+            <div class="flex justify-between items-center" style="margin-bottom: 2rem;">
+              <span class="badge badge--new">NOVO</span>
+              <span class="service-card__number">01</span>
+            </div>
+            <h3>Assistente Virtual IA</h3>
+            <p>Automatize o atendimento da sua empresa com inteligência artificial. Reduza tempo de espera e aumente a satisfação do cliente com respostas 24/7.</p>
+            <div style="margin-top: 2rem;">
+              <a href="/servicos.html" class="btn btn-white btn--sm">Saiba mais <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <!-- Regular Services -->
+          <div class="card service-card hover-lift">
+            <span class="service-card__number">02</span>
+            <h3>Telefonia IP</h3>
+            <p>Reduza custos e aumente a flexibilidade com nossa solução completa de comunicação por voz em nuvem.</p>
+            <a href="/servicos.html" class="link" style="margin-top: 1.5rem;">Saiba mais <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card service-card hover-lift">
+            <span class="service-card__number">03</span>
+            <h3>Internet Empresarial</h3>
+            <p>Conexões de alta velocidade e estabilidade com SLA garantido para manter sua empresa sempre online.</p>
+            <a href="/servicos.html" class="link" style="margin-top: 1.5rem;">Saiba mais <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card service-card hover-lift">
+            <span class="service-card__number">04</span>
+            <h3>Segurança Digital</h3>
+            <p>Proteção avançada contra ameaças cibernéticas com firewall, antivírus corporativo e backup em nuvem.</p>
+            <a href="/servicos.html" class="link" style="margin-top: 1.5rem;">Saiba mais <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card service-card hover-lift">
+            <span class="service-card__number">05</span>
+            <h3>Infraestrutura de TI</h3>
+            <p>Projetos e implementação de redes corporativas, servidores e sistemas de alta performance.</p>
+            <a href="/servicos.html" class="link" style="margin-top: 1.5rem;">Saiba mais <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- CTA Row -->
+        <div class="cta-row" data-reveal>
+          <div>
+            <h3>Precisa de uma solução personalizada?</h3>
+            <p class="text-body" style="margin-top: 0.5rem;">Entre em contato conosco para uma consultoria gratuita e descubra como podemos ajudar seu negócio.</p>
+          </div>
+          <div style="text-align: right;">
+            <a href="/contato.html" class="btn btn-primary">Solicitar consultoria <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="stats-banner" data-reveal>
+          <div class="stats-banner__header">
+            <span class="eyebrow eyebrow--light">INDICADORES</span>
+            <div>
+              <h2 style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 1rem;">Números que Comprovam Nossa Excelência</h2>
+              <p style="color: rgba(255,255,255,0.8); max-width: 600px;">Ao longo de mais de duas décadas, construímos uma história de sucesso focada em resultados reais para nossos clientes.</p>
+            </div>
+          </div>
+          <div class="stats-banner__grid">
+            <div class="stat">
+              <div class="stat__eyebrow">
+                <span>01</span>
+                <span>HISTÓRIA</span>
+              </div>
+              <div class="stat__number"><span data-counter="22" data-duration="2000">0</span>+</div>
+              <div class="stat__label">Anos no mercado</div>
+            </div>
+            <div class="stat stat--light" style="transform: translateY(-20px);">
+              <div class="stat__eyebrow">
+                <span>02</span>
+                <span>CONFIANÇA</span>
+              </div>
+              <div class="stat__number"><span data-counter="1500" data-duration="2500">0</span>+</div>
+              <div class="stat__label">Clientes satisfeitos</div>
+            </div>
+            <div class="stat">
+              <div class="stat__eyebrow">
+                <span>03</span>
+                <span>ALCANCE</span>
+              </div>
+              <div class="stat__number"><span data-counter="4" data-duration="1500">0</span></div>
+              <div class="stat__label">Unidades no Brasil</div>
+            </div>
+            <div class="stat">
+              <div class="stat__eyebrow">
+                <span>04</span>
+                <span>QUALIDADE</span>
+              </div>
+              <div class="stat__number"><span data-counter="98" data-duration="2000">0</span>%</div>
+              <div class="stat__label">Taxa de renovação</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">NOSSAS SOLUÇÕES</span>
+          <h2>Soluções Empresariais</h2>
+          <p>Desenvolvemos soluções personalizadas para atender às necessidades específicas do seu negócio, garantindo eficiência e produtividade.</p>
+        </div>
+
+        <div class="solutions-grid" data-reveal-stagger>
+          <div class="card hover-lift">
+            <div class="solution-card__badges">
+              <span class="badge">Redução de custos</span>
+              <span class="badge">Produtividade</span>
+            </div>
+            <h3 style="margin: 1rem 0 0.5rem; font-size: var(--fs-h4);">Comunicação Unificada</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem;">Integre todos os canais de comunicação da sua empresa em uma única plataforma, aumentando a produtividade e reduzindo custos.</p>
+            <a href="/solucoes.html" class="link">Conhecer solução <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift">
+            <div class="solution-card__badges">
+              <span class="badge">Escalabilidade</span>
+              <span class="badge">Segurança</span>
+            </div>
+            <h3 style="margin: 1rem 0 0.5rem; font-size: var(--fs-h4);">Cloud Computing</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem;">Migre seus serviços para a nuvem e ganhe em escalabilidade, segurança e redução de custos com infraestrutura sob demanda.</p>
+            <a href="/solucoes.html" class="link">Conhecer solução <span class="arrow">→</span></a>
+          </div>
+
+          <div class="card hover-lift">
+            <div class="solution-card__badges">
+              <span class="badge">Alta disponibilidade</span>
+              <span class="badge">Suporte 24/7</span>
+            </div>
+            <h3 style="margin: 1rem 0 0.5rem; font-size: var(--fs-h4);">Conectividade Avançada</h3>
+            <p class="text-body" style="margin-bottom: 1.5rem;">Soluções de rede que garantem estabilidade e velocidade para suas operações, com redundância e monitoramento proativo.</p>
+            <a href="/solucoes.html" class="link">Conhecer solução <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section" style="padding-bottom: var(--space-4xl);">
+      <div class="bottom-cta" data-reveal>
+        <h3>Pronto para transformar sua comunicação?</h3>
+        <p>Entre em contato para uma consultoria gratuita e descubra como podemos ajudar seu negócio a crescer com tecnologia de ponta.</p>
+        <a href="/contato.html" class="btn btn-primary">Fale com um especialista <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="flex items-center gap-sm">
+            <div class="header__logo-mark" style="background: var(--sky); color: var(--navy);">AZ</div>
+            <span class="header__logo-text" style="color: white;">azcom</span>
+          </div>
+          <p>Soluções inovadoras em tecnologia e comunicação para impulsionar o seu negócio.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">SOLUÇÕES</h4>
+          <div class="footer__links">
+            <a href="/servicos.html" class="footer__link">Telefonia IP</a>
+            <a href="/servicos.html" class="footer__link">Internet Empresarial</a>
+            <a href="/servicos.html" class="footer__link">Segurança Digital</a>
+            <a href="/servicos.html" class="footer__link">Infraestrutura de TI</a>
+            <a href="/solucoes.html" class="footer__link">Cloud Computing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">LINKS ÚTEIS</h4>
+          <div class="footer__links">
+            <a href="/sobre.html" class="footer__link">Sobre Nós</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="/contato.html" class="footer__link">Contato</a>
+            <a href="#" class="footer__link">Termos de Uso</a>
+            <a href="#" class="footer__link">Política de Privacidade</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">CONTATO</h4>
+          <div class="footer__contact-info">
+            <span>Rua Cássia 1149, Jardim Francano</span>
+            <span>Franca/SP, 14405016</span>
+            <span style="margin-top: 0.5rem; font-weight: 600; color: white;">+55 (16) 98225-0770</span>
+            <span>contato@grupoazc.com.br</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <span>© 2026 AZCOM. TODOS OS DIREITOS RESERVADOS.</span>
+        <span>FRANCA · SP · BR</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Widget -->
+  <div class="whatsapp">
+    <a href="https://wa.me/5516982250770" target="_blank" rel="noopener noreferrer" class="whatsapp__btn" aria-label="Fale conosco pelo WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+      </svg>
+    </a>
+    <div class="whatsapp__tooltip">Fale conosco pelo WhatsApp</div>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" class="scroll-top" aria-label="Voltar ao topo">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com a nossa <a href="#" style="text-decoration: underline;">Política de Privacidade</a>.
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__reject">Rejeitar</button>
+        <button class="cookie-banner__btn cookie-banner__accept">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

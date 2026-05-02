@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | AZcom</title>
+  <meta name="description" content="Fale com os especialistas da AZcom e agende uma consultoria gratuita." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AZcom | Tecnologia que transforma negócios" />
+  <meta property="og:description" content="Soluções inovadoras em telefonia IP, internet empresarial e infraestrutura de TI." />
+  <meta property="og:image" content="https://www.azcom.com.br/img/hero-bg.webp" />
+  <meta property="og:url" content="https://www.azcom.com.br/" />
+
+  <!-- Google Analytics 4 (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Code (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <div class="header__logo-mark">AZ</div>
+        <span class="header__logo-text">azcom</span>
+      </a>
+      
+      <nav class="header__nav desktop-only">
+        <a href="/" class="header__link">Home</a>
+        <a href="/servicos.html" class="header__link">Serviços</a>
+        <a href="/solucoes.html" class="header__link">Soluções</a>
+        <a href="/sobre.html" class="header__link">Sobre</a>
+      </nav>
+
+      
+      <div class="header__actions flex items-center gap-sm">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Modo Escuro / Claro">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <div class="header__cta desktop-only">
+
+        <a href="/contato.html" class="btn btn-primary btn--sm">Fale Conosco</a>
+      </div>
+      </div>
+
+      <button id="burger" class="header__burger mobile-only" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <aside id="drawer" class="drawer">
+    <div class="drawer__header">
+      <div class="header__logo-text">azcom</div>
+      <button id="drawer-close" class="drawer__close" aria-label="Fechar menu">×</button>
+    </div>
+    <a href="/" class="drawer__link">Home</a>
+    <a href="/servicos.html" class="drawer__link">Serviços</a>
+    <a href="/solucoes.html" class="drawer__link">Soluções</a>
+    <a href="/sobre.html" class="drawer__link">Sobre</a>
+    <a href="/contato.html" class="drawer__link" style="margin-top: 1rem; background: var(--navy); color: white; text-align: center;">Fale Conosco</a>
+  </aside>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__inner" data-reveal>
+        <div class="page-hero__content">
+          <span class="eyebrow eyebrow--light">VAMOS CONVERSAR</span>
+          <h1 class="text-hero">Fale com a AZcom</h1>
+          <p>Nossa equipe de especialistas está pronta para tirar suas dúvidas e ajudar a encontrar a melhor solução tecnológica para a sua empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section section--flush">
+      <div class="container">
+        <div class="grid grid-2 gap-2xl">
+          
+          <!-- Contact Info -->
+          <div data-reveal="left">
+            <h2 style="font-size: var(--fs-h2); margin-bottom: 1.5rem;">Como podemos ajudar?</h2>
+            <p class="text-body" style="margin-bottom: 3rem;">
+              Preencha o formulário para solicitar um orçamento, tirar dúvidas técnicas ou agendar uma consultoria gratuita. Responderemos o mais breve possível.
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+              <div>
+                <span class="eyebrow" style="margin-bottom: 0.5rem;">TELEFONE E WHATSAPP</span>
+                <p style="font-size: var(--fs-h4); font-weight: 600; color: var(--navy);">+55 (16) 98225-0770</p>
+                <p class="text-small" style="margin-top: 0.25rem;">Segunda a Sexta, das 8h às 18h</p>
+              </div>
+              
+              <div>
+                <span class="eyebrow" style="margin-bottom: 0.5rem;">E-MAIL</span>
+                <p style="font-size: var(--fs-h4); font-weight: 600; color: var(--navy);">contato@grupoazc.com.br</p>
+              </div>
+              
+              <div>
+                <span class="eyebrow" style="margin-bottom: 0.5rem;">ENDEREÇO MATRIZ</span>
+                <p style="font-size: 1.125rem; font-weight: 500; color: var(--navy); line-height: 1.5;">
+                  Rua Cássia, 1149<br>
+                  Jardim Francano<br>
+                  Franca - SP, CEP 14405-016
+                </p>
+              </div>
+            </div>
+            
+            <!-- Minimal Map Embed -->
+            <div style="margin-top: 3rem; border-radius: var(--radius-lg); overflow: hidden; height: 240px; background: #e2e8f0;">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.159336151522!2d-47.404555823871225!3d-20.312984950478054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a31d4e0e5621%3A0xc3f344237f3eb3c4!2sR.%20C%C3%A1ssia%2C%201149%20-%20Jardim%20Francano%2C%20Franca%20-%20SP%2C%2014405-016!5e0!3m2!1spt-BR!2sbr!4v1714674998394!5m2!1spt-BR!2sbr">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div data-reveal="right">
+            <div class="card card--xl">
+              <form id="contact-form" novalidate>
+                <div class="form-row" style="margin-bottom: 1.5rem;">
+                  <div class="form-group">
+                    <label class="form-label" for="nome">Nome Completo *</label>
+                    <input class="form-input" type="text" id="nome" name="nome" required placeholder="João da Silva">
+                    <span class="form-error">Este campo é obrigatório</span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">E-mail Corporativo *</label>
+                    <input class="form-input" type="email" id="email" name="email" required placeholder="joao@empresa.com.br">
+                    <span class="form-error">Insira um e-mail válido</span>
+                  </div>
+                </div>
+                
+                <div class="form-row" style="margin-bottom: 1.5rem;">
+                  <div class="form-group">
+                    <label class="form-label" for="telefone">Telefone / WhatsApp</label>
+                    <input class="form-input" type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="empresa">Empresa</label>
+                    <input class="form-input" type="text" id="empresa" name="empresa" placeholder="Nome da Empresa">
+                  </div>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                  <label class="form-label" for="assunto">Assunto *</label>
+                  <select class="form-input" id="assunto" name="assunto" required style="appearance: auto;">
+                    <option value="" disabled selected>Selecione um assunto</option>
+                    <option value="telefonia">Telefonia IP / PABX</option>
+                    <option value="internet">Internet Corporativa</option>
+                    <option value="seguranca">Segurança Digital / Firewall</option>
+                    <option value="infra">Projetos de Infraestrutura de TI</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="outros">Outros assuntos</option>
+                  </select>
+                  <span class="form-error">Selecione uma opção</span>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 2rem;">
+                  <label class="form-label" for="mensagem">Mensagem *</label>
+                  <textarea class="form-input" id="mensagem" name="mensagem" required rows="4" placeholder="Como podemos ajudar sua empresa hoje?"></textarea>
+                  <span class="form-error">Este campo é obrigatório</span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Enviar Mensagem</button>
+                <p class="text-xs text-center" style="margin-top: 1rem; color: var(--fog);">
+                  Seus dados estão seguros. Não enviamos spam.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="flex items-center gap-sm">
+            <div class="header__logo-mark" style="background: var(--sky); color: var(--navy);">AZ</div>
+            <span class="header__logo-text" style="color: white;">azcom</span>
+          </div>
+          <p>Soluções inovadoras em tecnologia e comunicação para impulsionar o seu negócio.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">SOLUÇÕES</h4>
+          <div class="footer__links">
+            <a href="/servicos.html" class="footer__link">Telefonia IP</a>
+            <a href="/servicos.html" class="footer__link">Internet Empresarial</a>
+            <a href="/servicos.html" class="footer__link">Segurança Digital</a>
+            <a href="/servicos.html" class="footer__link">Infraestrutura de TI</a>
+            <a href="/solucoes.html" class="footer__link">Cloud Computing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">LINKS ÚTEIS</h4>
+          <div class="footer__links">
+            <a href="/sobre.html" class="footer__link">Sobre Nós</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="/contato.html" class="footer__link">Contato</a>
+            <a href="#" class="footer__link">Termos de Uso</a>
+            <a href="#" class="footer__link">Política de Privacidade</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">CONTATO</h4>
+          <div class="footer__contact-info">
+            <span>Rua Cássia 1149, Jardim Francano</span>
+            <span>Franca/SP, 14405016</span>
+            <span style="margin-top: 0.5rem; font-weight: 600; color: white;">+55 (16) 98225-0770</span>
+            <span>contato@grupoazc.com.br</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 AZCOM. TODOS OS DIREITOS RESERVADOS.</span>
+        <span>FRANCA · SP · BR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

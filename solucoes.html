@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soluções | AZcom</title>
+  <meta name="description" content="Soluções empresariais personalizadas para aumentar a eficiência e produtividade do seu negócio." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AZcom | Tecnologia que transforma negócios" />
+  <meta property="og:description" content="Soluções inovadoras em telefonia IP, internet empresarial e infraestrutura de TI." />
+  <meta property="og:image" content="https://www.azcom.com.br/img/hero-bg.webp" />
+  <meta property="og:url" content="https://www.azcom.com.br/" />
+
+  <!-- Google Analytics 4 (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Code (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <div class="header__logo-mark">AZ</div>
+        <span class="header__logo-text">azcom</span>
+      </a>
+      
+      <nav class="header__nav desktop-only">
+        <a href="/" class="header__link">Home</a>
+        <a href="/servicos.html" class="header__link">Serviços</a>
+        <a href="/solucoes.html" class="header__link header__link--active">Soluções</a>
+        <a href="/sobre.html" class="header__link">Sobre</a>
+      </nav>
+
+      
+      <div class="header__actions flex items-center gap-sm">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Modo Escuro / Claro">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <div class="header__cta desktop-only">
+
+        <a href="/contato.html" class="btn btn-primary btn--sm">Fale Conosco</a>
+      </div>
+      </div>
+
+      <button id="burger" class="header__burger mobile-only" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <aside id="drawer" class="drawer">
+    <div class="drawer__header">
+      <div class="header__logo-text">azcom</div>
+      <button id="drawer-close" class="drawer__close" aria-label="Fechar menu">×</button>
+    </div>
+    <a href="/" class="drawer__link">Home</a>
+    <a href="/servicos.html" class="drawer__link">Serviços</a>
+    <a href="/solucoes.html" class="drawer__link drawer__link--active">Soluções</a>
+    <a href="/sobre.html" class="drawer__link">Sobre</a>
+    <a href="/contato.html" class="drawer__link" style="margin-top: 1rem; background: var(--navy); color: white; text-align: center;">Fale Conosco</a>
+  </aside>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__inner" data-reveal>
+        <div class="page-hero__content">
+          <span class="eyebrow eyebrow--light">PARA O SEU NEGÓCIO</span>
+          <h1 class="text-hero">Soluções Inteligentes</h1>
+          <p>Entendemos as dores do mercado corporativo e desenvolvemos soluções sob medida que entregam resultados tangíveis em redução de custos, produtividade e segurança.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Detail -->
+    <section class="section section--flush">
+      <div class="container">
+        
+        <!-- Solution 1 -->
+        <div class="results-card" data-reveal style="margin-bottom: 2rem;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 1rem;">Otimização Operacional</span>
+            <h2 style="font-size: var(--fs-h2); margin-bottom: 1rem;">Comunicação Unificada Integrada</h2>
+            <p class="text-body" style="margin-bottom: 1.5rem;">
+              Uma plataforma que consolida voz, vídeo, mensagens e presença, eliminando silos de comunicação e reduzindo significativamente os custos operacionais de telecom.
+            </p>
+            <a href="/contato.html" class="btn btn-primary">Implementar <span class="arrow">→</span></a>
+          </div>
+          <div class="results-card__bullets">
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">01</span>
+              <span>Redução de até 40% nos custos de telefonia</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">02</span>
+              <span>Comunicação centralizada em um único app</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">03</span>
+              <span>Maior colaboração entre equipes remotas</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">04</span>
+              <span>Gestão centralizada e relatórios avançados</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution 2 -->
+        <div class="results-card" data-reveal style="background: var(--paper); margin-bottom: 2rem;">
+          <div class="results-card__bullets">
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">01</span>
+              <span>Escalabilidade imediata de recursos</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">02</span>
+              <span>Disponibilidade garantida por SLA</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">03</span>
+              <span>Backups automáticos e disaster recovery</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">04</span>
+              <span>Acesso seguro de qualquer lugar</span>
+            </div>
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 1rem;">Transformação Digital</span>
+            <h2 style="font-size: var(--fs-h2); margin-bottom: 1rem;">Jornada para a Nuvem (Cloud)</h2>
+            <p class="text-body" style="margin-bottom: 1.5rem;">
+              Apoiamos sua empresa na transição do modelo tradicional (on-premise) para soluções em nuvem, garantindo segurança, escalabilidade e menor Custo Total de Propriedade (TCO).
+            </p>
+            <a href="/contato.html" class="btn btn-secondary">Iniciar jornada <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Solution 3 -->
+        <div class="results-card" data-reveal style="margin-bottom: 2rem;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 1rem;">Proteção de Ativos</span>
+            <h2 style="font-size: var(--fs-h2); margin-bottom: 1rem;">Arquitetura Zero Trust</h2>
+            <p class="text-body" style="margin-bottom: 1.5rem;">
+              Uma abordagem moderna de segurança cibernética que não confia implicitamente em nenhum usuário ou dispositivo, interno ou externo, exigindo verificação contínua.
+            </p>
+            <a href="/contato.html" class="btn btn-primary">Proteger dados <span class="arrow">→</span></a>
+          </div>
+          <div class="results-card__bullets">
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">01</span>
+              <span>Mitigação de ataques ransomware</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">02</span>
+              <span>Proteção de dados sensíveis e compliance (LGPD)</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">03</span>
+              <span>Visibilidade total da rede e dispositivos</span>
+            </div>
+            <div class="results-card__bullet">
+              <span class="results-card__bullet-num">04</span>
+              <span>Acesso condicional e MFA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section" style="padding-bottom: var(--space-4xl);">
+      <div class="bottom-cta" data-reveal>
+        <h3>Qual é o seu maior desafio hoje?</h3>
+        <p>Nossos especialistas estão prontos para desenhar a arquitetura tecnológica ideal para o momento da sua empresa.</p>
+        <a href="/contato.html" class="btn btn-primary">Agendar Diagnóstico Gratuito <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="flex items-center gap-sm">
+            <div class="header__logo-mark" style="background: var(--sky); color: var(--navy);">AZ</div>
+            <span class="header__logo-text" style="color: white;">azcom</span>
+          </div>
+          <p>Soluções inovadoras em tecnologia e comunicação para impulsionar o seu negócio.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">SOLUÇÕES</h4>
+          <div class="footer__links">
+            <a href="/servicos.html" class="footer__link">Telefonia IP</a>
+            <a href="/servicos.html" class="footer__link">Internet Empresarial</a>
+            <a href="/servicos.html" class="footer__link">Segurança Digital</a>
+            <a href="/servicos.html" class="footer__link">Infraestrutura de TI</a>
+            <a href="/solucoes.html" class="footer__link">Cloud Computing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">LINKS ÚTEIS</h4>
+          <div class="footer__links">
+            <a href="/sobre.html" class="footer__link">Sobre Nós</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="/contato.html" class="footer__link">Contato</a>
+            <a href="#" class="footer__link">Termos de Uso</a>
+            <a href="#" class="footer__link">Política de Privacidade</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">CONTATO</h4>
+          <div class="footer__contact-info">
+            <span>Rua Cássia 1149, Jardim Francano</span>
+            <span>Franca/SP, 14405016</span>
+            <span style="margin-top: 0.5rem; font-weight: 600; color: white;">+55 (16) 98225-0770</span>
+            <span>contato@grupoazc.com.br</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 AZCOM. TODOS OS DIREITOS RESERVADOS.</span>
+        <span>FRANCA · SP · BR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nós | AZcom</title>
+  <meta name="description" content="Conheça a história e os valores da AZcom, uma empresa com mais de 20 anos de experiência em telecomunicações." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AZcom | Tecnologia que transforma negócios" />
+  <meta property="og:description" content="Soluções inovadoras em telefonia IP, internet empresarial e infraestrutura de TI." />
+  <meta property="og:image" content="https://www.azcom.com.br/img/hero-bg.webp" />
+  <meta property="og:url" content="https://www.azcom.com.br/" />
+
+  <!-- Google Analytics 4 (Placeholder) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Code (Placeholder) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <div class="header__logo-mark">AZ</div>
+        <span class="header__logo-text">azcom</span>
+      </a>
+      
+      <nav class="header__nav desktop-only">
+        <a href="/" class="header__link">Home</a>
+        <a href="/servicos.html" class="header__link">Serviços</a>
+        <a href="/solucoes.html" class="header__link">Soluções</a>
+        <a href="/sobre.html" class="header__link header__link--active">Sobre</a>
+      </nav>
+
+      
+      <div class="header__actions flex items-center gap-sm">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Modo Escuro / Claro">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <div class="header__cta desktop-only">
+
+        <a href="/contato.html" class="btn btn-primary btn--sm">Fale Conosco</a>
+      </div>
+      </div>
+
+      <button id="burger" class="header__burger mobile-only" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <aside id="drawer" class="drawer">
+    <div class="drawer__header">
+      <div class="header__logo-text">azcom</div>
+      <button id="drawer-close" class="drawer__close" aria-label="Fechar menu">×</button>
+    </div>
+    <a href="/" class="drawer__link">Home</a>
+    <a href="/servicos.html" class="drawer__link">Serviços</a>
+    <a href="/solucoes.html" class="drawer__link">Soluções</a>
+    <a href="/sobre.html" class="drawer__link drawer__link--active">Sobre</a>
+    <a href="/contato.html" class="drawer__link" style="margin-top: 1rem; background: var(--navy); color: white; text-align: center;">Fale Conosco</a>
+  </aside>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__inner" data-reveal>
+        <div class="page-hero__content">
+          <span class="eyebrow eyebrow--light">NOSSA HISTÓRIA</span>
+          <h1 class="text-hero">Sobre a AZcom</h1>
+          <p>Desde 2003, somos especialistas em conectar pessoas e empresas através da tecnologia, entregando soluções robustas, confiáveis e inovadoras.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- History / Story -->
+    <section class="section section--flush">
+      <div class="container">
+        <div class="grid grid-2 gap-xl items-center" data-reveal>
+          <div>
+            <h2 style="font-size: var(--fs-h2); margin-bottom: 1.5rem;">22 anos de inovação e confiança.</h2>
+            <p class="text-body" style="margin-bottom: 1rem;">
+              A AZcom nasceu com um propósito claro: democratizar o acesso à tecnologia corporativa de ponta para empresas de todos os tamanhos, com um atendimento próximo, ágil e humanizado.
+            </p>
+            <p class="text-body" style="margin-bottom: 2rem;">
+              O que começou como uma operadora de telefonia regional em Franca/SP, hoje é uma integradora completa de soluções de TI e Telecomunicações com atuação nacional, mas sem perder a essência do atendimento consultivo que nos trouxe até aqui.
+            </p>
+            
+            <div style="display: flex; gap: 2rem;">
+              <div>
+                <span style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--blue);">2003</span>
+                <div class="text-label" style="color: var(--dim);">Fundação</div>
+              </div>
+              <div>
+                <span style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--blue);">1500+</span>
+                <div class="text-label" style="color: var(--dim);">Clientes Ativos</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="border-radius: var(--radius-xl); overflow: hidden; height: 500px; background: var(--grad-sky);">
+             <!-- Placeholder para foto gerada por IA ou foto real -->
+             <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+               [Imagem da Equipe/Sede]
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" style="background: var(--cream-warm);">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <span class="eyebrow">NO QUE ACREDITAMOS</span>
+          <h2>Nossos Valores Principais</h2>
+          <p>Estes são os pilares que norteiam todas as nossas decisões e relacionamentos com clientes, parceiros e colaboradores.</p>
+        </div>
+
+        <div class="grid grid-3" data-reveal-stagger>
+          <div class="card hover-lift">
+            <div class="flex items-center gap-sm" style="margin-bottom: 1rem;">
+               <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: white; display: flex; align-items: center; justify-content: center;">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+               </div>
+               <h3 class="text-h4" style="margin:0;">Confiabilidade</h3>
+            </div>
+            <p class="text-body">A tecnologia do seu negócio não pode falhar. Entregamos infraestrutura robusta e serviços com alta disponibilidade (SLA) para que você durma tranquilo.</p>
+          </div>
+
+          <div class="card hover-lift">
+            <div class="flex items-center gap-sm" style="margin-bottom: 1rem;">
+               <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: white; display: flex; align-items: center; justify-content: center;">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+               </div>
+               <h3 class="text-h4" style="margin:0;">Agilidade</h3>
+            </div>
+            <p class="text-body">O mercado não espera. Temos processos desburocratizados e suporte técnico rápido, focado na resolução efetiva na primeira chamada.</p>
+          </div>
+
+          <div class="card hover-lift">
+            <div class="flex items-center gap-sm" style="margin-bottom: 1rem;">
+               <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: white; display: flex; align-items: center; justify-content: center;">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+               </div>
+               <h3 class="text-h4" style="margin:0;">Proximidade</h3>
+            </div>
+            <p class="text-body">Não vendemos pacotes fechados. Atuamos como consultores, entendendo a fundo o seu cenário para desenhar a solução que realmente faz sentido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">LIDERANÇA</span>
+          <h2>Nossa Diretoria</h2>
+          <p>Conheça os especialistas à frente da AZcom, dedicados a entregar excelência.</p>
+        </div>
+
+        <div class="grid grid-3" data-reveal-stagger>
+          <!-- Member 1 -->
+          <div class="card card--flat">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--grad-navy); color: white; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 24px; font-weight: 800; margin-bottom: 1rem;">AF</div>
+            <h3 class="text-h4" style="margin-bottom: 0.25rem;">André Ferraro</h3>
+            <p class="text-label" style="color: var(--blue); margin-bottom: 1rem;">CEO & Fundador</p>
+            <p class="text-small">Mais de 28 anos de experiência em tecnologia e telecomunicações. Visão estratégica e foco no sucesso do cliente.</p>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="card card--flat">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--grad-navy); color: white; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 24px; font-weight: 800; margin-bottom: 1rem;">AC</div>
+            <h3 class="text-h4" style="margin-bottom: 0.25rem;">Andréia Chioca</h3>
+            <p class="text-label" style="color: var(--blue); margin-bottom: 1rem;">Diretora de Operações</p>
+            <p class="text-small">Especialista em gestão de processos e equipes de tecnologia. Garante a entrega contínua com qualidade.</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="card card--flat">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--grad-navy); color: white; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 24px; font-weight: 800; margin-bottom: 1rem;">RF</div>
+            <h3 class="text-h4" style="margin-bottom: 0.25rem;">Rafael Faleiros</h3>
+            <p class="text-label" style="color: var(--blue); margin-bottom: 1rem;">Diretor Executivo</p>
+            <p class="text-small">Especialista em criar experiências excepcionais para clientes e expansão de mercado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="flex items-center gap-sm">
+            <div class="header__logo-mark" style="background: var(--sky); color: var(--navy);">AZ</div>
+            <span class="header__logo-text" style="color: white;">azcom</span>
+          </div>
+          <p>Soluções inovadoras em tecnologia e comunicação para impulsionar o seu negócio.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">SOLUÇÕES</h4>
+          <div class="footer__links">
+            <a href="/servicos.html" class="footer__link">Telefonia IP</a>
+            <a href="/servicos.html" class="footer__link">Internet Empresarial</a>
+            <a href="/servicos.html" class="footer__link">Segurança Digital</a>
+            <a href="/servicos.html" class="footer__link">Infraestrutura de TI</a>
+            <a href="/solucoes.html" class="footer__link">Cloud Computing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">LINKS ÚTEIS</h4>
+          <div class="footer__links">
+            <a href="/sobre.html" class="footer__link">Sobre Nós</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="/contato.html" class="footer__link">Contato</a>
+            <a href="#" class="footer__link">Termos de Uso</a>
+            <a href="#" class="footer__link">Política de Privacidade</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">CONTATO</h4>
+          <div class="footer__contact-info">
+            <span>Rua Cássia 1149, Jardim Francano</span>
+            <span>Franca/SP, 14405016</span>
+            <span style="margin-top: 0.5rem; font-weight: 600; color: white;">+55 (16) 98225-0770</span>
+            <span>contato@grupoazc.com.br</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 AZCOM. TODOS OS DIREITOS RESERVADOS.</span>
+        <span>FRANCA · SP · BR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
